@@ -112,15 +112,16 @@ if( $request->file('photo')->isValid() ){
 
 //funciona das duas formas, o nome photo é o msm do form
 // store salva o arquivo e cria a pasta products dentro de storage/app
-dd($request->file('photo')->store('products'));
+
+//dd($request->file('photo')->store('products'));
 //$request->photo;
 
 //pegando o nome enviado no campo nome e concatenando com a extensão do arquivo
 $nameFile = $request->name . '.' . $request->photo->extension();
-$request->file('photo')->store('products', $nameFile);
+dd($request->file('photo')->storeAs('fotospublicas', $nameFile));
 
 }
-        ;
+
     }
 
 

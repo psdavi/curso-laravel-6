@@ -271,7 +271,7 @@ Route::delete('products/{id}', 'App\Http\Controllers\ProductController@destroy')
 /*
 Route::resource('products', 'App\Http\Controllers\ProductController');
 
-Route::resource('products', 'App\Http\Controllers\ProductController')->middleware('auth');
+//Route::resource('products', 'App\Http\Controllers\ProductController')->middleware('auth');
 //redireciona pra login
 
 */
