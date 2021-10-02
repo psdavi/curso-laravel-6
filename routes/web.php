@@ -275,3 +275,7 @@ Route::resource('products', 'App\Http\Controllers\ProductController');
 //redireciona pra login
 
 */
+
+//ROTA PESQUISA
+
+Route::any('products/search', 'App\Http\Controllers\ProductController@search')->name('products.search');

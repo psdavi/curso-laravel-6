@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+//pega o model user namespace
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
